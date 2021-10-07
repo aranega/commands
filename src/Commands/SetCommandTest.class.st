@@ -109,3 +109,17 @@ SetCommandTest >> testSetSimpleValueUndoRedoUndo [
 	setcmd undo.
 	self assert: obj name equals: previousName
 ]
+
+{ #category : #tests }
+SetCommandTest >> testSetUnknownSlot [
+
+	| obj setcmd |
+	obj := RBVariableNode new.
+
+	setcmd := SetCommand new
+		          object: obj;
+		          slotName: #nonexistingslot;
+		          value: 44.
+
+	self assert: setcmd canExecute equals: false
+]

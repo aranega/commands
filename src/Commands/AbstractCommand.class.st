@@ -13,8 +13,9 @@ Class {
 { #category : #testing }
 AbstractCommand >> canExecute [
 
-	slot := object class slotNamed: slotName asSymbol.
-	slot ifNil: [ ^ false ].
+	[ object class slotNamed: slotName asSymbol ]
+		on: SlotNotFound
+		do: [ ^ false ].
 	^ true
 ]
 
