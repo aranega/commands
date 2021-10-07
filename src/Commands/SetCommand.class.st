@@ -10,7 +10,8 @@ Class {
 
 { #category : #testing }
 SetCommand >> canExecute [
-	^ super canExecute "and: [ isNotManySlot  ]" 
+
+	^ super canExecute
 ]
 
 { #category : #testing }

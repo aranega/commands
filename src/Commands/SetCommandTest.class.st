@@ -26,6 +26,30 @@ SetCommandTest >> testSetNil [
 ]
 
 { #category : #tests }
+SetCommandTest >> testSetSimpleFameInstanceAttribute [
+
+	| obj setcmd school |
+	obj := FamixTest4Teacher new.
+	school := FamixTest4School new.
+	setcmd := FameSetCommand new
+		          object: obj;
+		          slotName: #school;
+		          value: school.
+
+	self assert: setcmd canExecute equals: true.
+
+	setcmd execute.
+
+	self assert: obj school equals: school.
+
+	self assert: setcmd canUndo equals: true.
+	setcmd undo.
+	self assert: obj school equals: nil.
+	setcmd redo.
+	self assert: obj school equals: school
+]
+
+{ #category : #tests }
 SetCommandTest >> testSetSimpleIntegerValue [
 
 	| obj setcmd |
