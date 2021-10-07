@@ -26,6 +26,23 @@ SetCommandTest >> testSetNil [
 ]
 
 { #category : #tests }
+SetCommandTest >> testSetSimpleIntegerValue [
+
+	| obj setcmd |
+	obj := RBVariableNode new.
+
+	setcmd := SetCommand new
+		          object: obj;
+		          slotName: #start;
+		          value: 44.
+
+	self assert: setcmd canExecute equals: true.
+	
+	setcmd execute.
+	self assert: obj start equals: 44.
+]
+
+{ #category : #tests }
 SetCommandTest >> testSetSimpleValue [
 
 	| obj setcmd |
