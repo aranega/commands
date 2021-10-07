@@ -1,11 +1,11 @@
 Extension { #name : #Collection }
 
-{ #category : #'*Commands-Core' }
+{ #category : #'*Commands' }
 Collection >> add: newObject afterIndex: anIndex [
 	self subclassResponsibility
 ]
 
-{ #category : #'*Commands-Core' }
+{ #category : #'*Commands' }
 Collection >> removeIndex: removedIndex [
 	self subclassResponsibility 
 ]

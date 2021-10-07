@@ -5,7 +5,7 @@ Class {
 		'b',
 		'name'
 	],
-	#category : #'Commands-Core-virtuals'
+	#category : #'Commands-virtuals'
 }
 
 { #category : #accessing }

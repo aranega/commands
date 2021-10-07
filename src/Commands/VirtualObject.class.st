@@ -6,7 +6,7 @@ Class {
 		'valueDict',
 		'commands'
 	],
-	#category : #'Commands-Core-virtuals'
+	#category : #'Commands-virtuals'
 }
 
 { #category : #'instance creation' }

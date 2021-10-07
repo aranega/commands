@@ -5,7 +5,7 @@ Class {
 		'a',
 		'myprop'
 	],
-	#category : #'Commands-Core-virtuals'
+	#category : #'Commands-virtuals'
 }
 
 { #category : #accessing }

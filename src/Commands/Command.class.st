@@ -1,7 +1,7 @@
 Class {
 	#name : #Command,
 	#superclass : #Object,
-	#category : #'Commands-Core-core'
+	#category : #'Commands-core'
 }
 
 { #category : #testing }

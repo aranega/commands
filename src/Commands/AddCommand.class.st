@@ -5,7 +5,7 @@ Class {
 		'value',
 		'index'
 	],
-	#category : #'Commands-Core-core'
+	#category : #'Commands-core'
 }
 
 { #category : #testing }

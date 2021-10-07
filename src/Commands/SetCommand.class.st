@@ -5,7 +5,7 @@ Class {
 		'value',
 		'previousValue'
 	],
-	#category : #'Commands-Core-core'
+	#category : #'Commands-core'
 }
 
 { #category : #testing }

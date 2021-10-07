@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'indexTop'
 	],
-	#category : #'Commands-Core-core'
+	#category : #'Commands-core'
 }
 
 { #category : #initialization }

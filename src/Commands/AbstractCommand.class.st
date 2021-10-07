@@ -7,7 +7,7 @@ Class {
 		'slot',
 		'slotName'
 	],
-	#category : #'Commands-Core-core'
+	#category : #'Commands-core'
 }
 
 { #category : #testing }

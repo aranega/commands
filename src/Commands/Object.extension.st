@@ -1,6 +1,6 @@
 Extension { #name : #Object }
 
-{ #category : #'*Commands-Core' }
+{ #category : #'*Commands' }
 Object >> asVirtualObject [
 
 	| instances |
